@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#66075260"
+    tools:context=".MainActivity">
+
+    <GridLayout
+        android:id="@+id/color_selection_grid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:columnCount="3"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:rowCount="3"
+        android:useDefaultMargins="true">
+
+        <Button
+            style="@style/GameButton"
+            android:onClick="onColorButtonClick"
+            android:text=""
+            android:textColor="#FFFFFF"
+            android:textSize="30sp" />
+
+        <Button style="@style/GameButton"
+            android:onClick="onColorButtonClick"
+            android:text=""
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"/>
+
+        <Button style="@style/GameButton"
+            android:onClick="onColorButtonClick"
+            android:text=""
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"/>
+
+        <Button style="@style/GameButton"
+            android:onClick="onColorButtonClick"
+            android:text=""
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"/>
+
+        <Button style="@style/GameButton"
+            android:onClick="onColorButtonClick"
+            android:text=""
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"/>
+
+        <Button style="@style/GameButton"
+            android:onClick="onColorButtonClick"
+            android:text=""
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"/>
+
+        <Button style="@style/GameButton"
+            android:onClick="onColorButtonClick"
+            android:text=""
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"/>
+
+        <Button style="@style/GameButton"
+            android:onClick="onColorButtonClick"
+            android:text=""
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"/>
+
+        <Button style="@style/GameButton"
+            android:onClick="onColorButtonClick"
+            android:text=""
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"/>
+
+    </GridLayout>
+
+    <Button
+        android:id="@+id/button_check"
+        style="@style/CheckButton"
+        android:layout_marginTop="20dp"
+        android:onClick="onCheckClick"
+        android:text="@string/check"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/color_selection_grid" />
+
+    <Button
+        android:id="@+id/button_new_game"
+        style= "@style/NewGameButton"
+        android:layout_marginTop="20dp"
+        android:onClick="onPlayClick"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button_check"
+        android:text="@string/play" />
+
+    <Button
+        android:id="@+id/blended_view"
+        style="@style/GameButton"
+        android:layout_marginTop="20dp"
+        android:text="@string/targetColor"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        app:layout_constraintLeft_toLeftOf="@id/color_selection_grid"
+        app:layout_constraintTop_toBottomOf="@id/button_new_game" />
+
+    <TextView
+        android:id="@+id/correct_guesses"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintLeft_toRightOf="@id/blended_view"
+        app:layout_constraintTop_toBottomOf="@id/button_new_game"
+        android:text="@string/correctGuesses"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/absolute_failures"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintLeft_toRightOf="@id/blended_view"
+        app:layout_constraintTop_toBottomOf="@id/correct_guesses"
+        android:text="@string/absoluteFailures"
+        android:textSize="20sp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Zakacat\'s Color Match Game</string>
+    <string name="play">New Game</string>
+    <string name="correct">Correct!</string>
+    <string name="failure">Absolute Failure!</string>
+    <string name="check">CHECK</string>
+    <string name="correctGuesses">Correct Guesses: %1$d</string>
+    <string name="absoluteFailures">Absolute Failures: %1$d</string>
+    <string name="targetColor">Target Color</string>
+</resources>
